@@ -1,16 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-#game-board{
-    display :grid ;
-    grid-template-rows: repeat (3, 200px);
+    background-color: #faf6fa;
+  }
+  
+  #game-board {
+    display: grid;
+    /* gap: 1px; */
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 600px;
+    height: 600px;
     justify-content: center;
-    margin: 50px ;
-}
+    margin: 0 auto;
+    border: 10px solid #95f9bffe;
+    border-radius: 20px;
+    background-color: #95f9bffe;
+    box-shadow: 2px 2px 2px;
+  }
+  
+  .tiles {
+    background-color: rgb(5, 0, 4);
+    border: 2px solid #95f9bffe;
+    border-radius: 10px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 4em;
+  }
+  
+  header {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  h1{
+    text-align: center;
+    margin: 20px;
+    background-color:rgba(255, 255, 255, 0.8)
 
-.tiles {
-    background-color: rgba(255,255,255);
-    
-
-}
+  }
+  
+  .reset-button button {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .reset-button {
+    text-align: center;
+  }
+  
+  .reset-button button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
